@@ -30,9 +30,20 @@ class App extends React.Component {
 		const camera = <a-camera position="0 0 0" rotation="0 0 0">
 			<a-cursor></a-cursor>                       
 		</a-camera>
-		const lighting = <Entity id={"light1"} light={{type: 'point'}}/>;
-		const music = <a-sound src="#song" autoplay="true" loop="true"></a-sound>
-		const sky = <a-sky src="#sky-image" rotation="0 -90 0"></a-sky>;
+		const lighting = <Entity
+			id={"light1"}
+			light={{type: 'point'}}
+		/>;
+		const music = <a-sound
+			src="#song"
+			autoplay="true"
+			loop="true"
+			volume="0.4"
+		></a-sound>
+		const sky = <a-sky
+			src="#sky-image"
+			rotation="0 -90 0"
+		></a-sky>;
 
 		// objects
 		const keyboard = <Entity
@@ -60,7 +71,7 @@ class App extends React.Component {
 
 					{camera}
 					{lighting}
-					{/* {music}  TODO UNCOMMENT WHEN DEV IS DONE */}
+					{music}
 					{sky}
 
 					<Popup/>
