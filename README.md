@@ -1,5 +1,7 @@
 # Advanced Digital Art Assignment 3
 > You're so damn electrocute!
+>
+>   -- Janelle Monae, I Got The Juice
 
 This repo contains an [a-frame](https://aframe.io/) webVR project. It is for an assignment in Prof. Aly Ogasian's Advanced Digital Art class at Scripps College.
 
@@ -19,3 +21,4 @@ This repo contains an [a-frame](https://aframe.io/) webVR project. It is for an 
 > How does sound function?
 
 ## Artist Statement
+My project is inspired by early-2000s girls' toys sites like Barbie.com and Polly Pocket, and what they taught me about what it means to be a girl in the age of the internet.
