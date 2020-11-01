@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/electrocute/static/js/main.be74aad8.chunk.js",
+    "main.js.map": "/electrocute/static/js/main.be74aad8.chunk.js.map",
+    "runtime-main.js": "/electrocute/static/js/runtime-main.e6e01878.js",
+    "runtime-main.js.map": "/electrocute/static/js/runtime-main.e6e01878.js.map",
+    "static/js/2.d0195b8e.chunk.js": "/electrocute/static/js/2.d0195b8e.chunk.js",
+    "static/js/2.d0195b8e.chunk.js.map": "/electrocute/static/js/2.d0195b8e.chunk.js.map",
+    "index.html": "/electrocute/index.html",
+    "precache-manifest.78c464c356c903f153bada655950a1ba.js": "/electrocute/precache-manifest.78c464c356c903f153bada655950a1ba.js",
+    "service-worker.js": "/electrocute/service-worker.js",
+    "static/js/2.d0195b8e.chunk.js.LICENSE.txt": "/electrocute/static/js/2.d0195b8e.chunk.js.LICENSE.txt",
+    "static/media/DojaCat_CyberSex_Instrumental.mp3": "/electrocute/static/media/DojaCat_CyberSex_Instrumental.18ecbe69.mp3",
+    "static/media/grid2.png": "/electrocute/static/media/grid2.e55a6898.png",
+    "static/media/keyboard.obj": "/electrocute/static/media/keyboard.3e895f32.obj",
+    "static/media/popup-edit-mosaic-ver.jpg": "/electrocute/static/media/popup-edit-mosaic-ver.038136d5.jpg",
+    "static/media/prettybutnotconsideredvaluable.m4a": "/electrocute/static/media/prettybutnotconsideredvaluable.b8186022.m4a"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6e01878.js",
+    "static/js/2.d0195b8e.chunk.js",
+    "static/js/main.be74aad8.chunk.js"
+  ]
+}
