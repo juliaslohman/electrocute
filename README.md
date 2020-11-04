@@ -6,6 +6,7 @@
 This repo contains an [a-frame](https://aframe.io/) webVR project. It is for an assignment in Prof. Aly Ogasian's Advanced Digital Art class at Scripps College.
 
 ## [>>View Deployment Here<<](http://juliaslohman.github.io/electrocute)
+(Best viewed in Chrome)
 
 ## Assignment Description
 > In this assignment, you will explore how digital media can be used to extend, augment, or distort our understanding of time, space and place.
@@ -24,3 +25,5 @@ This repo contains an [a-frame](https://aframe.io/) webVR project. It is for an 
 
 ## Artist Statement
 My project is inspired by early-2000s girls' toys sites like Barbie.com and Polly Pocket, and what they taught me about what it means to be a girl in the age of the internet.
+![barbiebedroom](src/assets/images/inspo/barbiesbedroom.jpg)
+![myscenefashion](src/assets/images/inspo/myscenefashion.png)

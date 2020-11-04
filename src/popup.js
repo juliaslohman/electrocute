@@ -18,7 +18,7 @@ class Popup extends React.Component {
 	render () {
         const shouldRender = this.state.showPopup
             ? <a-image
-                id={"popup"}
+                id={"first-popup"}
                 src={"#popup-image"}
                 position={"0, 0, -2"}
                 width="30"
