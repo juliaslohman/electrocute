@@ -24,6 +24,6 @@ This repo contains an [a-frame](https://aframe.io/) webVR project. It is for an 
 > How does sound function?
 
 ## Artist Statement
-My project is inspired by early-2000s girls' toys sites like Barbie.com and Polly Pocket, and what they taught me about what it means to be a girl in the age of the internet.
+'Electrocute' is inspired by early-2000s girls' toys sites like Barbie.com and PollyPocket.com, and what they taught me about what it means to be a girl in the age of the internet. The project also incorporates inspirations from contemporary womxn musicians and artists that engage with egirl aesthetics or cyberfeminism, like Doja Cat, Janelle Monae, and Blake Kathryn. The environment of Electrocute is simultaneously nostalgic and futuristic, and completely feminine.
 ![barbiebedroom](src/assets/images/inspo/barbiesbedroom.jpg)
 ![myscenefashion](src/assets/images/inspo/myscenefashion.png)
