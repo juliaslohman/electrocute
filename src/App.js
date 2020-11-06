@@ -4,6 +4,7 @@ import 'aframe';
 import 'aframe-particle-system-component';
 import { Entity, Scene } from 'aframe-react';
 import 'aframe-extras';
+import 'aframe-text-geometry-component';
 
 // assets
 import cyberSexInstrumental from './assets/audio/DojaCat_CyberSex_Instrumental.mp3';
@@ -15,6 +16,7 @@ import keyboardModel from './assets/models/keyboard.obj';
 import searchModel from './assets/models/MagnifyingGlass.obj';
 import chatImage1 from './assets/images/popups/chat1.png';
 import chatImage2 from './assets/images/popups/chat2.png';
+import scrollingText from './assets/scrollingText.js';
 
 // children
 import Popup from './popup.js';
@@ -92,7 +94,7 @@ class App extends React.Component {
 			position={{
 				x: -10,
 				y: 0,
-				z: -5,
+				z: -10,
 			}}
 			animation={{
 				property: "rotation",
@@ -124,7 +126,32 @@ class App extends React.Component {
 			height="10"
 			scale={"0.2 0.2 0.2"}
 		></a-image>
-		
+		const longText = <Entity
+			text-geometry={`value: ${scrollingText}`}
+			postion={{
+				x: 50,
+				y: -30,
+				z: -10
+			}}
+			rotation={{
+				x: 0,
+				y: -100,
+				z: 0, 
+			}}
+			material={{
+				color: 'hotpink',
+			}}
+			animation={{
+				property: "position",
+				dir: "alternate",
+				dur: 100000,
+				to: "50 50 -10",
+				loop: true,
+				easing: "linear",
+				delay: 2000,
+			}}
+		/>
+
 		return (
 			<div className="universal-wrapper">
 				<Scene loading-screen={"dotsColor: hotpink; backgroundColor: white"}>
@@ -141,6 +168,7 @@ class App extends React.Component {
 					{search}
 					{chatBubble1}
 					{chatBubble2}
+					{longText}
 				</Scene>
 			</div>
 		);
