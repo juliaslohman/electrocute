@@ -65,6 +65,15 @@ class App extends React.Component {
 			src="#sky-image"
 			rotation="0 -90 0"
 		></a-sky>;
+		const ocean = <a-ocean
+			color="fuchsia"
+			width="100"
+			depth="100"
+			density="15"
+			speed="1"
+			position="0 -20 -10"
+			light="color: '#FF69B4'; intensity: 1.8"
+		></a-ocean>;
 
 		// objects
 		const keyboard = <Entity
@@ -84,7 +93,7 @@ class App extends React.Component {
 				easing: "linear"
 			}}
 			sound={
-				"src: #pretty-audio; volume: 20; autoplay: false; on: click; poolSize: 1"
+				prettyAudioString
 			}
 		/>;
 		const search = <Entity
@@ -186,22 +195,22 @@ class App extends React.Component {
 				value: Ask your parents' permission before going online
 			`}
 			postion={{
-				x: 10,
-				y: -10,
+				x: -10,
+				y: 0,
 				z: -15,
 			}}
 			rotation={{
 				x: 0,
-				y: -60,
+				y: 60,
 				z: 0,
 			}}
 			material={{
 				color: 'black',
 			}}
-			animation={{
+			animation={{  // for some reason position for text-geometry components only applies with this hack
 				property: "position",
-				from: "10 -10 -15",
-				to: "10 -10 -15",
+				from: "-10 0 -15",
+				to: "-10 0 -15",
 				loop: true,
 			}}
 		/>
@@ -216,6 +225,7 @@ class App extends React.Component {
 					{music}
 					{adVoice}
 					{sky}
+					{ocean}
 
 					<Popup/>
 					{keyboard}
