@@ -71,6 +71,10 @@ Even if they don't like me, they all know me
 
 I identify this as iron pyrite
 
+Hey, hey
+You, you
+I don't like your girlfriend
+
 Pixel Chix
 
 Be who you wanna be, girl!

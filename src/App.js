@@ -14,12 +14,16 @@ import skyImage from './assets/images/sky/keyboardbg.png';
 import popupImage from './assets/images/popups/popup-edit-mosaic-ver.jpg';
 import keyboardModel from './assets/models/keyboard.obj';
 import searchModel from './assets/models/MagnifyingGlass.obj';
+import lipstickModel from './assets/models/lipstick.obj';
 import chatImage1 from './assets/images/popups/chat1.png';
 import chatImage2 from './assets/images/popups/chat2.png';
 import scrollingText from './assets/scrollingText.js';
 
 // children
 import Popup from './popup.js';
+
+// const
+const prettyAudioString = "src: #pretty-audio; volume: 20; autoplay: false; on: click; poolSize: 1";
 
 class App extends React.Component {
 
@@ -28,12 +32,13 @@ class App extends React.Component {
 			<audio id="song" src={cyberSexInstrumental} preload={"auto"}></audio>,
 			<audio id="ad-audio" src={adAudio} preload={"auto"}></audio>,
 			<audio id="pretty-audio" src={prettyAudio} preload={"auto"}></audio>,
-			<img id="sky-image" src={skyImage} alt="pink grid"/>,
+			<img id="sky-image" src={skyImage} alt={"pink grid"}/>,
 			<img id="popup-image" src={popupImage} alt={"Hey girl! Let's hang out!"}/>,
 			<img id="chat-image-1" src={chatImage1} alt={"What are you doing today?"}/>,
 			<img id="chat-image-2" src={chatImage2} alt={"MADISON: hey, let's go shopping!"}/>,
 			<a-asset-item id="keyboard" src={keyboardModel}></a-asset-item>,
 			<a-asset-item id="search" src={searchModel}></a-asset-item>,
+			<a-asset-item id="lipstick" src={lipstickModel}></a-asset-item>,
 		]
 
 		// setting
@@ -94,7 +99,7 @@ class App extends React.Component {
 			position={{
 				x: -10,
 				y: 0,
-				z: -10,
+				z: -15,
 			}}
 			animation={{
 				property: "rotation",
@@ -104,14 +109,39 @@ class App extends React.Component {
 				easing: "linear"
 			}}
 			sound={
-				"src: #pretty-audio; volume: 20; autoplay: false; on: click; poolSize: 1"
+				prettyAudioString
+			}
+		/>;
+		const lipstick = <Entity
+			obj-model={{
+				obj: "#lipstick"
+			}}
+			scale={{
+				x: 0.4,
+				y: 0.4,
+				z: 0.4,
+			}}
+			position={{
+				x: 2,
+				y: 2,
+				z: -4,
+			}}
+			animation={{
+				property: "rotation",
+				dur: 5000,
+				to: "180 360 90",
+				loop: true,
+				easing: "linear"
+			}}
+			sound={
+				prettyAudioString
 			}
 		/>;
 		const chatBubble1 = <a-image
 			id={"chat-bubble-1"}
 			src={"#chat-image-1"}
 			side={"double"}
-			position={"10, 5, -10"}
+			position={"15, 5, -10"}
 			width="43"
 			height="10"
 			scale={"0.2 0.2 0.2"}
@@ -120,23 +150,20 @@ class App extends React.Component {
 			id={"chat-bubble-2"}
 			src={"#chat-image-2"}
 			side={"double"}
-			position={"-15, -2, 0"}
-			rotation={"0 135 0"}
+			position={"-5, -3, -5"}
+			rotation={"0 270 0"}
 			width="43"
 			height="10"
 			scale={"0.2 0.2 0.2"}
 		></a-image>
 		const longText = <Entity
-			text-geometry={`value: ${scrollingText}`}
+			text-geometry={
+				`value: ${scrollingText}`
+			}
 			postion={{
-				x: 50,
-				y: -30,
-				z: -10
-			}}
-			rotation={{
-				x: 0,
-				y: -100,
-				z: 0, 
+				x: 10,
+				y: -20,
+				z: -25,
 			}}
 			material={{
 				color: 'hotpink',
@@ -145,7 +172,8 @@ class App extends React.Component {
 				property: "position",
 				dir: "alternate",
 				dur: 100000,
-				to: "50 50 -10",
+				from: "10 -20 -25",
+				to: "10 50 -25",
 				loop: true,
 				easing: "linear",
 				delay: 2000,
@@ -166,6 +194,7 @@ class App extends React.Component {
 					<Popup/>
 					{keyboard}
 					{search}
+					{lipstick}
 					{chatBubble1}
 					{chatBubble2}
 					{longText}

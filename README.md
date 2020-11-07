@@ -6,7 +6,7 @@
 This repo contains an [a-frame](https://aframe.io/) webVR project. It is for an assignment in Prof. Aly Ogasian's Advanced Digital Art class at Scripps College.
 
 ## [>>View Deployment Here<<](http://juliaslohman.github.io/electrocute)
-(Best viewed in Chrome)
+(Best viewed in Chrome, if sound does not play, please refresh)
 
 ## Assignment Description
 > In this assignment, you will explore how digital media can be used to extend, augment, or distort our understanding of time, space and place.
