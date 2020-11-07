@@ -59,6 +59,10 @@ But that thought fills me with dread
 I'm not into sewing, baking, dress-making
 Not eating, bitching, submitting
 
+Madison is African-American, with brown skin, light blue eyes and medium brown hair.
+She was one of the original three dolls and the 'shopper' of the gang.
+According to the official My Scene website, she is an urban girl, who enjoys traveling in style, spending her time getting manicures at her favorite spa, and going shopping.
+
 Oh, we're late, late, late. We have twenty, maximum twenty-two minutes, for your royal fitting.
 And then it's move, move, move to your speech at the Historical Society.
 After that, we have to rush, and I mean rush, to the Horticultural Society Tea.
@@ -70,6 +74,8 @@ Barbie's changed, Barbie's new and different!
 Even if they don't like me, they all know me
 
 I identify this as iron pyrite
+
+BarbieGirls.com VIP membership with purchase of BarbieGirl MP3 player
 
 Hey, hey
 You, you

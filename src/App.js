@@ -72,8 +72,8 @@ class App extends React.Component {
 				obj: "#keyboard"
 			}}
 			position={{
-				x: 0,
-				y: 0,
+				x: 1,
+				y: -1,
 				z: -10
 			}}
 			animation={{
@@ -103,7 +103,8 @@ class App extends React.Component {
 			}}
 			animation={{
 				property: "rotation",
-				dur: 5000,
+				dir: "alternate",
+				dur: 10000,
 				to: "10 360 40",
 				loop: true,
 				easing: "linear"
@@ -128,7 +129,8 @@ class App extends React.Component {
 			}}
 			animation={{
 				property: "rotation",
-				dur: 5000,
+				dir: "alternate",
+				dur: 8000,
 				to: "180 360 90",
 				loop: true,
 				easing: "linear"
@@ -173,16 +175,40 @@ class App extends React.Component {
 				dir: "alternate",
 				dur: 100000,
 				from: "10 -20 -25",
-				to: "10 50 -25",
+				to: "10 60 -25",
 				loop: true,
 				easing: "linear",
 				delay: 2000,
 			}}
 		/>
+		const disclaimerText = <Entity
+			text-geometry={`
+				value: Ask your parents' permission before going online
+			`}
+			postion={{
+				x: 10,
+				y: -10,
+				z: -15,
+			}}
+			rotation={{
+				x: 0,
+				y: -60,
+				z: 0,
+			}}
+			material={{
+				color: 'black',
+			}}
+			animation={{
+				property: "position",
+				from: "10 -10 -15",
+				to: "10 -10 -15",
+				loop: true,
+			}}
+		/>
 
 		return (
 			<div className="universal-wrapper">
-				<Scene loading-screen={"dotsColor: hotpink; backgroundColor: white"}>
+				<Scene loading-screen={"dotsColor: white; backgroundColor: hotpink"}>
 					{assets}
 
 					{camera}
@@ -198,6 +224,7 @@ class App extends React.Component {
 					{chatBubble1}
 					{chatBubble2}
 					{longText}
+					{disclaimerText}
 				</Scene>
 			</div>
 		);
