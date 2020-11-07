@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/electrocute/static/js/main.8ae5082f.chunk.js",
-    "main.js.map": "/electrocute/static/js/main.8ae5082f.chunk.js.map",
+    "main.js": "/electrocute/static/js/main.612df179.chunk.js",
+    "main.js.map": "/electrocute/static/js/main.612df179.chunk.js.map",
     "runtime-main.js": "/electrocute/static/js/runtime-main.e6e01878.js",
     "runtime-main.js.map": "/electrocute/static/js/runtime-main.e6e01878.js.map",
     "static/js/2.0cf0333c.chunk.js": "/electrocute/static/js/2.0cf0333c.chunk.js",
     "static/js/2.0cf0333c.chunk.js.map": "/electrocute/static/js/2.0cf0333c.chunk.js.map",
     "index.html": "/electrocute/index.html",
-    "precache-manifest.b71184b221ec070cc7d5204cbf32e22d.js": "/electrocute/precache-manifest.b71184b221ec070cc7d5204cbf32e22d.js",
+    "precache-manifest.1af2e049b9f3673eca9d9de9d4ec607d.js": "/electrocute/precache-manifest.1af2e049b9f3673eca9d9de9d4ec607d.js",
     "service-worker.js": "/electrocute/service-worker.js",
     "static/js/2.0cf0333c.chunk.js.LICENSE.txt": "/electrocute/static/js/2.0cf0333c.chunk.js.LICENSE.txt",
     "static/media/DojaCat_CyberSex_Instrumental.mp3": "/electrocute/static/media/DojaCat_CyberSex_Instrumental.18ecbe69.mp3",
@@ -22,6 +22,6 @@
   "entrypoints": [
     "static/js/runtime-main.e6e01878.js",
     "static/js/2.0cf0333c.chunk.js",
-    "static/js/main.8ae5082f.chunk.js"
+    "static/js/main.612df179.chunk.js"
   ]
 }
