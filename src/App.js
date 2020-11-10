@@ -65,15 +65,15 @@ class App extends React.Component {
 			src="#sky-image"
 			rotation="0 -90 0"
 		></a-sky>;
-		// const ocean = <a-ocean
-		// 	color="fuchsia"
-		// 	width="100"
-		// 	depth="100"
-		// 	density="15"
-		// 	speed="1"
-		// 	position="0 -20 -10"
-		// 	light="color: '#FF69B4'; intensity: 1.8"
-		// ></a-ocean>;
+		const ocean = <a-ocean
+			color="fuchsia"
+			width="100"
+			depth="100"
+			density="15"
+			speed="1"
+			position="0 -20 -10"
+			light="color: '#FF69B4'; intensity: 1.8"
+		></a-ocean>;
 
 		// objects
 		const keyboard = <Entity
@@ -225,7 +225,7 @@ class App extends React.Component {
 					{music}
 					{adVoice}
 					{sky}
-					{/* {ocean} */}
+					{ocean}
 
 					<Popup/>
 					{keyboard}
